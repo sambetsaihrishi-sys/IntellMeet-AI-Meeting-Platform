@@ -24,7 +24,7 @@ interface MeetingAIProps {
   meetingId: string;
 }
 
-const API_URL = "http://localhost:5000/api/ai";
+const API_URL = `${import.meta.env.VITE_API_URL}/api/ai`;
 
 function MeetingAI({ meetingId }: MeetingAIProps) {
   const [meetingText, setMeetingText] = useState("");
