@@ -901,3 +901,103 @@ body {
   color: #fca5a5;
   margin: 10px 0;
 }
+
+.dashboard-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.dashboard-header-actions button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+@media (max-width: 650px) {
+  .dashboard-header-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .dashboard-header-actions button {
+    width: 100%;
+  }
+}
+.dashboard-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.join-meeting-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #ffffff;
+  color: #4f46e5;
+  border: 2px solid #6366f1;
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.join-meeting-btn:hover {
+  background: #eef2ff;
+  border-color: #4f46e5;
+}
+
+.join-form-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.join-form-header h2 {
+  margin-bottom: 8px;
+}
+
+.join-form-header p {
+  color: #64748b;
+  line-height: 1.5;
+}
+
+.join-close-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  color: #64748b;
+  cursor: pointer;
+}
+
+.join-close-btn:hover {
+  color: #ef4444;
+}
+
+.empty-state .join-meeting-btn {
+  margin-top: 20px;
+}
+
+@media (max-width: 650px) {
+  .dashboard-header-actions {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .dashboard-header-actions button {
+    width: 100%;
+  }
+
+  .join-form-header {
+    flex-wrap: wrap;
+  }
+}
